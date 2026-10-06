@@ -1,0 +1,13 @@
+:root { color-scheme: dark; font-family: -apple-system, "Segoe UI", sans-serif; background: #141518; color: #f3f1ee; }
+body { margin: 0; }
+.app { max-width: 560px; margin: 64px auto; padding: 0 24px; }
+h1 { font-size: 40px; margin: 0 0 24px; }
+form { display: flex; gap: 8px; margin-bottom: 20px; }
+input:not([type=checkbox]) { flex: 1; padding: 12px 14px; border-radius: 10px; border: 1px solid #33363c; background: #1e2024; color: inherit; font-size: 16px; }
+button { padding: 0 18px; border: 0; border-radius: 10px; background: #f26a3d; color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; background: #1e2024; margin-bottom: 8px; font-size: 17px; }
+li span { flex: 1; }
+li.done span { text-decoration: line-through; color: #8b8781; }
+li button { background: transparent; color: #8b8781; font-size: 22px; padding: 0 6px; }
+.count { color: #8b8781; }
