@@ -91,7 +91,14 @@ export function TaskList({ tasks, setTasks }: TaskListProps) {
           </li>
         ))}
       </ul>
-      <p className="mt-4 text-sm text-muted-foreground">{tasks.filter((t) => !t.done).length} left</p>
+      <div className="mt-4 flex items-center justify-between text-sm text-muted-foreground">
+        <span>{tasks.filter((t) => !t.done).length} left</span>
+        {tasks.some((t) => t.done) && (
+          <Button size="sm" variant="ghost" onClick={() => setTasks((all) => all.filter((t) => !t.done))}>
+            Clear completed
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
